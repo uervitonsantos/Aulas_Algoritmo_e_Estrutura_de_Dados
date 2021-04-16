@@ -30,19 +30,21 @@ public class Divisor {
 	/**
 	 * @param args
 	 */
+	static int A, B, C, D;
+
 	public static void main(String[] args) {
-
-		int A, B, C = 0, D;
-
 		int n = -1;
 		int sqrtC = (int) Math.sqrt(C);
 
-		Scanner scanner = new Scanner(System.in);
-		A = scanner.nextInt();
-		B = scanner.nextInt();
-		C = scanner.nextInt();
-		D = scanner.nextInt();
-		scanner.close();
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Entre com o número positivo: ");	
+		
+		A = scan.nextInt();
+		B = scan.nextInt();
+		C = scan.nextInt();
+		D = scan.nextInt();
+		scan.close();
 
 		for (int i = 1; i <= sqrtC; ++i) {
 			if (C % i == 0) {
