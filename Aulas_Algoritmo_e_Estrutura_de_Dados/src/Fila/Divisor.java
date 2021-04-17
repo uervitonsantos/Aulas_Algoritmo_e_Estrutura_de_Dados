@@ -31,6 +31,7 @@ public class Divisor {
 	/**
 	 * @param args
 	 */
+<<<<<<< HEAD
 	
 		static int A, B, C, D;
 		
@@ -63,9 +64,35 @@ public class Divisor {
 	        }
 	    }
 	        if(cont==true)System.out.println("-1");
+=======
+	static int A, B, C, D;
 
+	public static void main(String[] args) {
+		int n = -1;
+		int sqrtC = (int) Math.sqrt(C);
+>>>>>>> branch 'master' of https://github.com/uervitonsantos/Aulas_Algoritmo_e_Estrutura_de_Dados.git
+
+<<<<<<< HEAD
 	        s.close();
+=======
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Entre com o número positivo: ");	
+		
+		A = scan.nextInt();
+		B = scan.nextInt();
+		C = scan.nextInt();
+		D = scan.nextInt();
+		scan.close();
+>>>>>>> branch 'master' of https://github.com/uervitonsantos/Aulas_Algoritmo_e_Estrutura_de_Dados.git
 
 	    }
 
+<<<<<<< HEAD
 	}
+=======
+	static boolean checkConditionsABD(int i) {
+		return (i % A == 0) && (i % B != 0) && (D % i != 0);
+	}
+}
+>>>>>>> branch 'master' of https://github.com/uervitonsantos/Aulas_Algoritmo_e_Estrutura_de_Dados.git
