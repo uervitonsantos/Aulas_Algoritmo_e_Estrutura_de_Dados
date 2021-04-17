@@ -19,6 +19,7 @@ possível. Caso contrário, a linha deve conter -1.
 
 package Fila;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -30,34 +31,41 @@ public class Divisor {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	
+		static int A, B, C, D;
+		
+		 public static void main(String[] args) throws IOException {
 
-		int A, B, C = 0, D;
+	            Scanner s= new Scanner(System.in);
+	        long a,b,c,d;
+	        a=s.nextLong();
+	        b=s.nextLong();
+	        c=s.nextLong();
+	        d=s.nextLong();
+	        boolean cont=true;
 
-		int n = -1;
-		int sqrtC = (int) Math.sqrt(C);
+	    if(c<=1000000){
+	        for(long i=1;i<=c;i++){
+	            if(i%a==0 && i%b!=0 && c%i==0 && d%i!=0){
+	                System.out.println(i);
+	                cont=false;
+	                break;
+	            }
+	        }
+	    }
+	    else {
+	        for(long i=1;i<=Math.sqrt(c);i++){
+	            if(i%a==0 && i%b!=0 && c%i==0 && d%i!=0){
+	                System.out.println(i);
+	                cont=false;
+	                break;
+	            }
+	        }
+	    }
+	        if(cont==true)System.out.println("-1");
 
-		Scanner scanner = new Scanner(System.in);
-		A = scanner.nextInt();
-		B = scanner.nextInt();
-		C = scanner.nextInt();
-		D = scanner.nextInt();
-		scanner.close();
+	        s.close();
 
-		for (int i = 1; i <= sqrtC; ++i) {
-			if (C % i == 0) {
-				if (checkConditionsABD(i)) {
-					n = i;
-					break;
-				} else if (checkConditionsABD(C / i)) {
-					n = C / i;
-				}
-			}
-		}
-		System.out.println(n);
+	    }
+
 	}
-
-	static boolean checkConditionsABD(int i) {
-		return (i % A == 0) && (i % B != 0) && (D % i != 0);
-	}
-}
