@@ -20,7 +20,6 @@ possível. Caso contrário, a linha deve conter -1.
 package Fila;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 /**
  * @author uerviton
@@ -31,68 +30,8 @@ public class Divisor {
 	/**
 	 * @param args
 	 */
-<<<<<<< HEAD
 	
-		static int A, B, C, D;
 		
-		 public static void main(String[] args) throws IOException {
+		 public static void main1(String[] args) throws IOException {
 
-	            Scanner s= new Scanner(System.in);
-	        long a,b,c,d;
-	        a=s.nextLong();
-	        b=s.nextLong();
-	        c=s.nextLong();
-	        d=s.nextLong();
-	        boolean cont=true;
-
-	    if(c<=1000000){
-	        for(long i=1;i<=c;i++){
-	            if(i%a==0 && i%b!=0 && c%i==0 && d%i!=0){
-	                System.out.println(i);
-	                cont=false;
-	                break;
-	            }
-	        }
-	    }
-	    else {
-	        for(long i=1;i<=Math.sqrt(c);i++){
-	            if(i%a==0 && i%b!=0 && c%i==0 && d%i!=0){
-	                System.out.println(i);
-	                cont=false;
-	                break;
-	            }
-	        }
-	    }
-	        if(cont==true)System.out.println("-1");
-=======
-	static int A, B, C, D;
-
-	public static void main(String[] args) {
-		int n = -1;
-		int sqrtC = (int) Math.sqrt(C);
->>>>>>> branch 'master' of https://github.com/uervitonsantos/Aulas_Algoritmo_e_Estrutura_de_Dados.git
-
-<<<<<<< HEAD
-	        s.close();
-=======
-		Scanner scan = new Scanner(System.in);
-		
-		System.out.println("Entre com o n�mero positivo: ");	
-		
-		A = scan.nextInt();
-		B = scan.nextInt();
-		C = scan.nextInt();
-		D = scan.nextInt();
-		scan.close();
->>>>>>> branch 'master' of https://github.com/uervitonsantos/Aulas_Algoritmo_e_Estrutura_de_Dados.git
-
-	    }
-
-<<<<<<< HEAD
-	}
-=======
-	static boolean checkConditionsABD(int i) {
-		return (i % A == 0) && (i % B != 0) && (D % i != 0);
-	}
-}
->>>>>>> branch 'master' of https://github.com/uervitonsantos/Aulas_Algoritmo_e_Estrutura_de_Dados.git
+		 }}
