@@ -23,7 +23,7 @@ public class Exer14 {
 		int impares = 0;
 
 		for (int i = 0; i < 10; i++) {
-			System.out.println("Entre com um número: ");
+			System.out.println("Entre com um numero: ");
 			num = scan.nextInt();
 
 			if (num % 2 == 0) {

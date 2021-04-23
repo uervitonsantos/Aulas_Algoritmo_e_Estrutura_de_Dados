@@ -21,11 +21,10 @@ public class Exer22 {
 
 		System.out.println("Entre com um número: ");
 		
-		float numero = scan.nextInt();
-		@SuppressWarnings("unused")
-		float soma = 0;
+		double numero = scan.nextDouble();
+		double soma = 0;
 		
-		soma = (float) (numero * 0.18);
+		soma = numero * 0.18;
 		
 		System.out.println("R$ " + soma);
 
