@@ -19,16 +19,25 @@ public class Exer22 {
 
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("Entre com um n�mero: ");
-		
-		double numero = scan.nextDouble();
-		double soma = 0;
-		
-		soma = numero * 0.18;
-		
-		System.out.println("R$ " + soma);
+		System.out.println("Informe o números de CD's: ");
 
-		
+		int cds = scan.nextInt();
+		double preco;
+		double soma = 0;
+		double media;
+
+		for (int i = 1; i <= cds; i++) {
+
+			System.out.println("Informe o valor do CD: " + i);
+			preco = scan.nextDouble();
+
+			soma += preco;
+
+		}
+
+		media = soma / cds;
+
+		System.out.println("Média gasta com a coleção de CD's: " + media);
 	}
 
 }
