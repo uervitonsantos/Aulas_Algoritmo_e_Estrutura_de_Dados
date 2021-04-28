@@ -19,7 +19,7 @@ public class Exer21 {
 
 		Scanner scan = new Scanner(System.in);
 
-		System.out.println("Entre com o número de turmas: ");
+		System.out.println("Entre com o numero de turmas: ");
 
 		int numTurmas = scan.nextInt();
 		int numAlunos;
@@ -39,7 +39,7 @@ public class Exer21 {
 					invalido = false;
 
 				} else {
-					System.out.println("Número de alunos inválido. Digite novamente: ");
+					System.out.println("Numero de alunos invalido. Digite novamente: ");
 				}
 
 			} while (invalido);
@@ -48,7 +48,7 @@ public class Exer21 {
 
 		}
 		float media = soma / numTurmas;
-		System.out.println("Média: " + media);
+		System.out.println("MÃ©dia: " + media);
 
 	}
 
