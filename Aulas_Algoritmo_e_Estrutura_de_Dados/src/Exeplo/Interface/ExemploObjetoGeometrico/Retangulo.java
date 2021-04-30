@@ -1,7 +1,7 @@
 /**
  * 
  */
-package operadores.relacionais;
+package Exeplo.Interface.ExemploObjetoGeometrico;
 
 /**
  * @author uerviton.santos
@@ -33,6 +33,18 @@ public class Retangulo implements ObjetoGeometrico{
 		area = lado * lado;
 		
 		return area;
+	}
+
+	@Override
+	public double getLargura() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getAltura() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }
