@@ -1,5 +1,5 @@
 /**
- * 
+ * Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50
  */
 package exercicios.logica.estruturas.de.repeticao;
 

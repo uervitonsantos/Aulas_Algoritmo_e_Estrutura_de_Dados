@@ -1,5 +1,5 @@
 /**
- * 
+ * Faça um programa que calcule o mostre a média aritmética de N notas.
  */
 package exercicios.logica.estruturas.de.repeticao;
 

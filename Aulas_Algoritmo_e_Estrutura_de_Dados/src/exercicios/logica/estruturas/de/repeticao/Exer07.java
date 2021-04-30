@@ -1,5 +1,5 @@
 /**
- * 
+ Faça um programa que leia 5 números e informe o maior número
  */
 package exercicios.logica.estruturas.de.repeticao;
 
