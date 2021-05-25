@@ -16,15 +16,22 @@ public class Exe37 {
 	 */
 	public static void main(String[] args) {
 
-		String ip;
-		
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Digite o IP com os pontos: ");
-		
-		ip = scan.next();
+		System.out.println("Digite um numero: ");
 
-		System.out.println("IP: " + ip);
+		int ip = scan.nextInt();
+
+		decimalConverção(ip);
+
+
+	}
+
+	private static void decimalConverção(int ip) {
 		
+		if (ip > 0) {
+			decimalConverção(ip / 2);
+			System.out.print(ip % 2);
+		}
 
 	}
 

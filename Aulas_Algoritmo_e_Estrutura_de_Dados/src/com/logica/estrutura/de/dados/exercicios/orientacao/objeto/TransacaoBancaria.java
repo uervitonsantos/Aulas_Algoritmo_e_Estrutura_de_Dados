@@ -26,7 +26,7 @@ public class TransacaoBancaria {
 		carro.setData(Calendar.getInstance().getTime());
 		carro.setClienteAtivo(true);
 
-		System.out.println(carro.toString());
+		System.out.println(carro.getAgencia());
 
 	}
 
